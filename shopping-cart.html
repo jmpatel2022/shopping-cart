@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="shopping-cart.css">
+    <script src="shopping-cart.js"></script>
+    <title>Shopping-cart</title>
+</head>
+
+<body>
+    <div class="boxes">
+        <div id="div1">Cart 1<br>
+            <div id="cart1">
+                <p>Total Item</p>
+            </div>
+        </div>
+        <div id="div2">Cart 2<br>
+            <div id="cart2">
+                <p>Total Item</p>
+            </div>
+        </div>
+        <div id="div3">Cart 3<br>
+            <div id="cart3">
+                <p>Total Item</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!--Item needs to Add -->
+        <label for="Enter Item">Enter Item :</label>
+        <input type="text" id="itemName" placeholder="Enter Item">
+        <label for=" In cart number">In cart Numner :</label>
+        <input type="text" id="addToCartID" placeholder="In cart number">
+        <button onclick="addItem()" style="flex-basis:30px">Add</button>
+        <button onclick="clearAll1()">clear all</button><br><br>
+
+        <!-- Item needs to Remove-->
+        <label for="total to remove">Total to Remove :</label>
+        <input type="text" id="totalRemove" placeholder="Total to remove">
+        <label for="in the cart">In the Cart :</label>
+        <input type="text" id="removeCartId" placeholder="In cart number">
+        <button class="btn" onclick="removeItem()" style="flex-basis:50px"> Remove</button>
+        <button onclick="clearAll2()">clear all</button><br><br>
+
+        <!--Item needs to Transfer-->
+        <label for="from cart number">From cart Number</label>
+        <input type="text" id="transferFrom" placeholder="From cart Number">
+        <label for="to cart number">To cart Number :</label>
+        <input type="text" id="transferTo" placeholder="To cart number">
+        <label for="number of items">Number of items</label>
+        <input type="text" id="TransferItem" placeholder="Number of items">
+        <button onclick="transfterAll()" class="btn" style="flex-basis:30px">Transfer</button>
+        <button onclick="clearAll3()">clear all</button><br><br>
+
+        <!-- Put Image in the Carts-->
+        <label for="Enter image">Enter Image :</label>
+        <input type="url" id="imageUrl" placeholder="Enter image">
+        <label for="in cart number">In cart Number</label>
+        <input type="text" id="imageCart" placeholder="in cart number">
+        <button class="btn" onclick="changeBackgroundImg()" style="flex-basis:100px">change Background</button>
+        <button onclick="clearAll4()">clear all</button><br><br>
+
+        <!--Text-Color change in the cart-->
+        <label for="enter color">Enter color:-</label>
+        <input type="color" id="fontColor" placeholder="Enter color">
+        <label for="in cart number">In cart Number :</label>
+        <input type="text" id="cartNumber" placeholder="in cart number">
+        <button class="btn" onclick="changeFontColor()" ; style="flex-basis:30px">Change text color</button>
+        <button onclick="clearAll5()">clear all</button><br><br>
+
+        <!--Search item in the carts-->
+        <label for="Search Item">Search Item :</label>
+        <input type="text" id="searchItem" placeholder="Search Item">
+        <label for=" In cart number">In cart Number :</label>
+        <input type="text" id="searchFrom" placeholder="In cart number">
+        <label for=" In cart number">Transfer to :</label>
+        <input type="text" id="searchTransfer" placeholder="In cart number">
+        <button onclick="speicalSearch()" style="flex-basis:30px">Transfer</button>
+        <button onclick="clearAll1()">clear all</button><br><br>
+
+        <!--Put new word Begining or ending-->
+        <label for="Enter word">Enter word :</label>
+        <input type="text" id="wordName" placeholder="Enter word">
+        <label for="Enter word">Position:</label>
+        <select name="" id="wordLoc">
+            <option value=0>Begining</option>
+            <option value=1>Ending</option>
+        </select>
+        <label for=" In cart number">In cart Number :</label>
+        <input type="text" id="wordCart" placeholder="In cart number">
+        <button onclick="spcialWord()" style="flex-basis:30px">Submit</button>
+        <button onclick="clearWord()">clear all</button><br><br>
+
+        <!--Search item All or Some-->
+        <label for="Search Item">Search Item :</label>
+        <input type="text" id="searchCriteria" placeholder="Search Item">
+        <label for=" In cart number">In cart Number :</label>
+        <input type="text" id="searchCartID" placeholder="In cart number">
+        <label for=" In cart number">Select criteria :</label>
+        <select id="searchOption">
+            <option value=0>Some</option>
+            <option value=1>All</option>
+        </select>
+        <button onclick="checkOption()" style="flex-basis:30px">Check</button>
+        <button onclick="clearAll6()">clear all</button><br><br>
+    </div>
+</body>
+
+</html>

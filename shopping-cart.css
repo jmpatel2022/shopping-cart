@@ -1,0 +1,45 @@
+#div1, #div2, #div3, #cartHeader {
+    height: 300px;
+    width: 30%;
+    margin: 10px;
+    border: 1px groove rgb(144, 108, 108);
+    border-radius: 12px;
+    box-shadow: 1px;
+    display: inline-block;
+    background-size: auto;
+    word-break: break-all;
+    text-align: center;
+    background-image: auto;
+    position: relative;
+    overflow: auto;
+}
+#cart1, #cart2, #cart3{
+    column-count: 2;
+    column-gap: 5px;
+    column-rule-style: solid;
+  
+}
+
+.boxes{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+p{ 
+    position: relative;
+    top: 300px; 
+    position: fixed;
+    
+ } 
+
+.container{
+    margin-left: 200px;
+    margin-top: 50px;
+}
+A
+ button{
+     height: 20px;
+ }
+
+  
